@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+</<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Payments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <form method="payment" action="./process.php">
+        <table>
+            <tr><th>Customer</th></tr>
+            <tr><td>Gender <input name="gender" type="text"></td></tr>
+            <tr><td>Date of Birth <input name="dob" type="date"></td></tr>
+            <tr><td>Average number of days late <input name="late" type="number"></td></tr>
+        </table>
+        <table>
+            <tr>
+                <td>Payment Date</td>
+                <td>Due</td>
+                <td>Paid Date</td>
+                <td>Ammount</td>
+                <td>Bank Account</td>
+            </tr>
+            <tr>
+                <td> <input name="pmtdate0" type="date"></td>
+                <td> <input name="duedate0" type="date"></td>
+                <td> <input name="paiddate0" type="date"></td>
+                <td><input name="ammount0" type="number"></td>
+                <td><input name="account0" type="text"></td>
+            </tr>
+            <tr>
+                <td> <input name="pmtdate1" type="date"></td>
+                <td> <input name="duedate1" type="date"></td>
+                <td> <input name="paiddate1" type="date"></td>
+                <td><input name="ammount1" type="number"></td>
+                <td><input name="account1" type="text"></td>
+            </tr>
+            <tr><td><button>Add Payment</button></td></tr>
+        </table>
+        <input type="submit">
+    </form>
+    
+    <a href="./index.html"><button>Back</button></a>
+</body>
+</html>
