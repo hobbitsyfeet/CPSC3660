@@ -1,0 +1,112 @@
+</<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>New Car Purchase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+
+<table id="new" style="width:600px">
+    <!-- NOTE THIS NEEDS MORE INFO?-->
+    <form method="GetNewCar" action="./process.php">
+        <!--Table Title-->
+        <tr><th>New Car Purchase</th></tr>
+
+        <!--Description of data-->
+        <tr><td>Date & Vin</td></tr>
+        <tr>
+            <td><input name="Date" type="date"></td>
+            <td><input name="Vin" type="text" value="Enter Vin" maxlength="17"></td>
+        </tr>
+
+        <tr><td>-----------------------------</td>
+            <td>-----------------------------</td>
+        </tr>
+        <!--First Row Descriptions-->
+        <tr>
+            <td>Model
+                <select name="Model">
+                        <option>Camry</option>
+                        <option>Corolla</option>
+                        <option>Rav4</option>
+                </select>  
+            </td>
+
+            <td>Edition
+                <select name="Edition">
+                    <option>BE</option>
+                    <option>CE</option>
+                    <!--NOTE based on model, add certain edition HERE-->
+                    <!--<option></option>-->
+                </select>
+            </td>
+
+            <td>Year
+                <input name="year" type="number" value="2000">
+                <!--NOTE based on model, add certain years HERE?
+                <select name="Year">
+                        <option></option>
+                </select>
+                -->
+            </td> 
+            
+
+            </select>
+                
+        </tr>
+
+        <tr>
+            <td>-----------------------------</td>
+            <td>-----------------------------</td>
+            <td>-----------------------------</td>
+        </tr>
+        <!--Second Row-->
+        <tr id="excolour">
+            <td>Exterior Colour</td>
+            <td>
+                <select name="ExteriorColour">
+                    <!--INSERT ANSWER TO ABOVE HERE in new option appended to end-->
+                    <option>Black</option>
+            </td>
+        </tr>
+
+        <!--Third Row-->
+        <tr id="incolour">
+            <td>Interior Colour</td>
+            <td>
+                <select name="ExteriorColour">
+                    <!--INSERT ANSWER TO ABOVE HERE in new option appended to end-->
+                    <option>Black</option> 
+            </td>
+        </tr>
+
+        <!--Fourth Row-->
+        <tr id="miles">
+            <td>Expected Miles</td>
+            <td>
+                <select name="Miles">
+                    <option>< 20,000 </option>
+                    <option>< 50,000</option>
+                    <option>< 100,000</option>
+                    <option>< 200,000</option>
+                    <option>< 500,000</option>     
+               </td></td>
+        </tr>
+
+        <!--Fifth Row-->
+        <tr id="msrp">
+            <td>MSRP</td>
+            <td><input type="number" name="MSRP"></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit"></td>
+        </tr>
+    </form>
+</table>
+<a href="./index.html"><button>Back</button></a>
+</body>
+</html>
