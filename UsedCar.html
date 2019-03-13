@@ -1,15 +1,129 @@
 <!DOCTYPE html>
-</<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>New Car Purchase</title>
+    <title>Used Car Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
 </head>
 <body>
-    
+    <form method="GetUsedCar" action="./process.php">
+    <!--Form for PHP-->
+    <table id="used" style="width:1200px">
+            <!--Description of data-->
+            <tr>
+                <th span="2" >Used Car Purchase</th>
+            </tr>
+            <tr>
+                <td>Date & Vin</td><td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input name="Date" type="date">
+                    <input name="Vin" type="text" value="Enter Vin" maxlength="17">
+                </td>
+            </tr>
+            <tr>
+                    <td>Location <input name="Location" type="text"></td>
+                    <td>Seller/Dealer<input name="Seller/Dealer" type="text" value="Enter Dealer"></td>
+            </tr>
+        </table>
+
+
+        <table style="width:1200px">
+            <tr class="info">
+                <td>Vehicle Info</td>
+                <td></td>
+                <td></td>
+                <td class="info"width="10px">#</td>
+                <td class="info">Problem</td>
+                <td class="info">Est. Repair cost</td>
+                <td class="info">Actual Cost</td>
+            </tr>
+            <tr>
+                <td>Model
+                    <select name="Model">
+                            <option>Camry</option>
+                            <option>Corolla</option>
+                            <option>Rav4</option>
+                    </select>  
+                </td>
+        
+                <td>Edition
+                    <select name="Edition">
+                        <option>BE</option>
+                        <option>CE</option>
+                        <!--NOTE based on model, add certain edition HERE-->
+                        <!--<option></option>-->
+                    </select>
+                </td>
+        
+                <td>Year
+                    <input name="year" type="number" value="2000">
+                    <!--NOTE based on model, add certain years HERE?
+                    <select name="Year">
+                            <option></option>
+                    </select>
+                    -->
+                </td>
+                
+                <td class="fillout"><input size="2px"></td>
+                <td class="fillout"><input size="35px"></td>
+                <td class="fillout"><input size="15px"></td>
+                <td class="fillout"><input size="15px"></td>
+
+            </tr>
+
+            <tr>
+            <td>Colour                 
+                <select name="Colour">
+                <!--INSERT ANSWER TO ABOVE HERE in new option appended to end-->
+                <option>Black</option></td>
+            <td></td>
+            <td></td>
+ 
+            <td class="fillout"><input size="2px"></td>
+            <td class="fillout"><input size="35px"></td>
+            <td class="fillout"><input size="15px"></td>
+            <td class="fillout"><input size="15px"></td>
+            </tr>
+            <tr>
+                <td>Miles <input name="miles" type="number" value="2000"></td>
+                <td></td>
+                <td></td>
+                <td class="fillout"><input size="2px"></td>
+                <td class="fillout"><input size="35px"></td>
+                <td class="fillout"><input size="15px"></td>
+                <td class="fillout"><input size="15px"></td>
+            </tr>
+            
+            <tr>
+                <td>Book Price <input name="bookprice" type="number" value="2000"></td>
+                <td></td>
+                <td></td>
+                <td class="fillout"><input size="2px"></td>
+                <td class="fillout"><input size="35px"></td>
+                <td class="fillout"><input size="15px"></td>
+                <td class="fillout"><input size="15px"></td>
+            </tr>
+            
+            <tr>
+                <td>Price Paid <input name="paidprice" type="number" value="2000"></td>
+                <td></td>
+                <td></td>
+                <td class="fillout"><input size="2px"></td>
+                <td class="fillout"><input size="35px"></td>
+                <td class="fillout"><input size="15px"></td>
+                <td class="fillout"><input size="15px"></td>
+
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+    </form>
+    </table>  
+    <a href="./index.html"><button>Back</button></a>  
 </body>
 </html>

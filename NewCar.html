@@ -4,27 +4,31 @@
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>New Car Purchase</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
 <body>
 
 <table id="new" style="width:600px">
-    <!-- NOTE THIS NEEDS MORE INFO?-->
+    <!--Form for PHP-->
     <form method="GetNewCar" action="./process.php">
         <!--Table Title-->
-        <tr><th>New Car Purchase</th></tr>
+        <tr>
+            <td></td>
+            <th>New Car Purchase</th>
+        </tr>
 
         <!--Description of data-->
-        <tr><td>Date & Vin</td></tr>
+        <tr>
+            <td>Date & Vin</td><td>
+        </tr>
+
         <tr>
             <td><input name="Date" type="date"></td>
             <td><input name="Vin" type="text" value="Enter Vin" maxlength="17"></td>
         </tr>
 
-        <tr><td>-----------------------------</td>
-            <td>-----------------------------</td>
-        </tr>
         <!--First Row Descriptions-->
         <tr>
             <td>Model
@@ -52,16 +56,8 @@
                 </select>
                 -->
             </td> 
-            
 
-            </select>
                 
-        </tr>
-
-        <tr>
-            <td>-----------------------------</td>
-            <td>-----------------------------</td>
-            <td>-----------------------------</td>
         </tr>
         <!--Second Row-->
         <tr id="excolour">
@@ -93,13 +89,13 @@
                     <option>< 100,000</option>
                     <option>< 200,000</option>
                     <option>< 500,000</option>     
-               </td></td>
+               </td>
         </tr>
 
         <!--Fifth Row-->
         <tr id="msrp">
             <td>MSRP</td>
-            <td><input type="number" name="MSRP"></td>
+            <td><input type="number" name="MSRP" value="0"></td>
         </tr>
 
         <tr>
