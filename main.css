@@ -1,6 +1,5 @@
-table{
+table.input{
     border-collapse: collapse;
-    border: 1px solid black;
 }
 tr:nth-child(even){background-color:lightgray;}
 th {
@@ -9,7 +8,7 @@ th {
     text-align: left;
 }
 
-tr.info, td.info{
+tr.info, td.info, th.info{
     border: 1px solid black;
 }
 
