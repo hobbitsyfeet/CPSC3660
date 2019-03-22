@@ -11,7 +11,7 @@
 <body>
 
 
-    <form method="GetNewCar" action="./process.php">
+    <form method="post" action="process.php">
         <!--Table Title-->
         <table>
             <tr>
@@ -19,8 +19,8 @@
                     <table width="525px">
                         <tr><th colspan="2">New Car Purchase</th></tr>
                         <tr><td>Date & Vin
-                                <input name="Date" type="date">
-                                <input name="Vin" type="text" value="Enter Vin" maxlength="17">
+                                <input name="Date" type="date"/>
+                                <input name="Vin" type="text" value="Enter Vin" maxlength="17"/>
                         </td>
                         </tr>
                     </table>
@@ -51,7 +51,7 @@
                         </td>
             
                         <td>Year
-                            <input name="year" type="number" value="2000">
+                            <input name="year" type="number" value="2000"/>
                             <!--NOTE based on model, add certain years HERE?
                             <select name="Year">
                                     <option></option>
@@ -95,7 +95,7 @@
             <!--Fifth Row-->
             <tr id="msrp">
                 <td>MSRP</td>
-                <td><input type="number" name="MSRP" value="0"></td>
+                <td><input type="number" name="MSRP" value="0"/></td>
             </tr>
     
 
@@ -104,7 +104,7 @@
 
 
         <tr>
-            <td><input type="submit"></td>
+            <td><input type="submit"/></td>
         </tr>
     </table>
     </form>
