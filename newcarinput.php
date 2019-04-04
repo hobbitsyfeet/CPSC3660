@@ -16,6 +16,6 @@ mysqli_query($C1, $sql);
 mysqli_close($C1);
 
 header("HTTP/1.1 303 See Other");
-header("Location: /cpsc3660/");
+header("Location: /index.html");
 ?>
 '  'Query Table to be added below

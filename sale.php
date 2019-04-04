@@ -52,7 +52,7 @@ $miles = $_POST["miles"];
 $price = $_POST["saleprice"];
 
 
-$sql = "UPDATE cars SET Sold = 1 , miles = $miles , Price_Paid = $price WHERE vin ='".$_POST["Vin"]."'";
+$sql = "UPDATE cars SET Sold = 1 , miles = $miles WHERE vin ='".$_POST["Vin"]."'";
 
 mysqli_query($C1, $sql);
 
